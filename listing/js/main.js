@@ -123,7 +123,38 @@
 
 		} , { offset: '85%' } );
 	};
-	
+
+
+	var scrollToSection = function() {
+	  $("a").on('click', function(event) {
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      console.log($(hash).offset().top)
+
+	      if (hash != "#info") {
+		    var distance_to_scroll = $(hash).offset().top - 30;
+		  } else {
+		  	var distance_to_scroll = $(hash).offset().top + $("#speakers").height() - 50;
+		  }
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: distance_to_scroll
+	      }, 900, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	};
 
 	// Document on load.
 	$(function(){
@@ -132,8 +163,7 @@
 		offcanvas();
 		mobileMenuOutsideClick();
 		contentWayPoint();
-		
-
+		scrollToSection();
 	});
 
 
