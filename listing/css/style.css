@@ -118,14 +118,13 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
 .fh5co-cover .btn {
   padding: 1em 3em;
-  opacity: .9;
-  background: #83CC61 !important;
+  opacity: .85;
 }
 .fh5co-cover.fh5co-cover_2 {
   height: 600px;
@@ -207,9 +206,9 @@ figure {
   padding-bottom: 5em;
 }
 .fh5co-listing .fh5co-item-wrap {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
   position: relative;
 }
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item {
@@ -241,6 +240,7 @@ figure {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  object-fit: cover;
 }
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item .fh5co-listing-copy {
   position: absolute;
@@ -1044,5 +1044,10 @@ figure {
 
 #dssb_logo {
   opacity: 0.7;
+}
+
+.height-250 {
+  margin-bottom: 20px;
+  height: 250px;
 }
 /*# sourceMappingURL=style.css.map */
