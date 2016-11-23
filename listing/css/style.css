@@ -262,7 +262,6 @@ figure {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  margin-left: 10px;
 }
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item .fh5co-listing-copy .icon {
   display: block;
@@ -300,6 +299,9 @@ figure {
   box-shadow: inset 0px -126px 311px -69px rgba(0, 0, 0, 0.95);
 }
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover .fh5co-listing-copy h2 {
+  margin-left: 10px;
+}
+.fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover .fh5co-listing-copy h4 {
   margin-left: 10px;
 }
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover .fh5co-listing-copy .icon {
