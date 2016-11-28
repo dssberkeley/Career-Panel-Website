@@ -140,7 +140,7 @@
 	      if (hash != "#info") {
 		    var distance_to_scroll = $(hash).offset().top - 30;
 		  } else {
-		  	var distance_to_scroll = $(hash).offset().top + $("#speakers").height() - 50;
+		  	var distance_to_scroll = $(hash).offset().top + $("#speakers").height() + 50;
 		  }
 
 	      // Using jQuery's animate() method to add smooth page scroll
